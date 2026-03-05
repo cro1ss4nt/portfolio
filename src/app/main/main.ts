@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 
-
 @Component({
   selector: 'app-main',
   imports: [],
@@ -25,7 +24,9 @@ export class Main {
         title: 'Kinh Nghiệm & Dự Án', hrmCat: 'Đồ án Tốt nghiệp & Dự án Công ty', hrmTitle: 'Hệ Thống Quản Lý Nhân Sự (HRM)',
         hrmDesc: 'Giải pháp quản lý nhân sự chuyên sâu được thiết kế riêng cho hệ sinh thái của Hola Group. Hỗ trợ quản lý vận hành sản xuất và tích hợp công nghệ chấm công thông minh qua mã QR Code.',
         demoAcc: 'Tài khoản Demo', role: 'Quyền hạn', account: 'Tài khoản', password: 'Mật khẩu',
-        companyProj: 'Dự án Công ty', webGiaReTitle: 'WebGiaRe & Cấu hình Máy chủ', dockerAchieve: 'Thành tựu Docker',
+
+        companyProj: 'Dự án Công ty', webGiaReTitle: 'WebGiaRe & Cấu hình Hạ tầng', dockerAchieve: 'Thành tựu Docker',
+
         spaTitle: 'Spa-pet (Đồ án Môn học)', spaDesc: 'Phát triển ứng dụng web Full-stack dành cho dịch vụ chăm sóc thú cưng. Thiết kế và triển khai RESTful APIs bằng Node.js để xử lý logic nghiệp vụ. Xây dựng giao diện tương tác với React.js.',
         internExp: 'Kinh nghiệm thực tế', internTitle: 'Thực tập sinh (4 Tháng) - Hola Group', internDesc: 'Tham gia phát triển, tối ưu hóa và triển khai các dự án web thực tế của công ty. Điều phối hoạt động của máy chủ, giải quyết các vấn đề liên quan đến hosting và quản lý cơ sở hạ tầng mạng cơ bản.'
       },
@@ -40,7 +41,9 @@ export class Main {
         title: 'Experience & Projects', hrmCat: 'Graduation & Company Project', hrmTitle: 'Human Resources Management (HRM)',
         hrmDesc: 'A comprehensive HR management solution designed specifically for the Hola Group ecosystem. Supports production operations management and integrates smart attendance via QR Code.',
         demoAcc: 'Demo Accounts', role: 'Role', account: 'Account', password: 'Password',
-        companyProj: 'Company Project', webGiaReTitle: 'WebGiaRe & Server Config', dockerAchieve: 'Docker Achievement',
+
+        companyProj: 'Company Project', webGiaReTitle: 'WebGiaRe & Infrastructure Config', dockerAchieve: 'Docker Achievement',
+
         spaTitle: 'Spa-pet (Course Project)', spaDesc: 'Developed a Full-stack web application for pet care services. Designed and implemented RESTful APIs using Node.js for business logic. Built interactive UI with React.js.',
         internExp: 'Practical Experience', internTitle: 'Intern (4 Months) - Hola Group', internDesc: 'Participated in developing, optimizing, and deploying real-world company web projects. Coordinated server operations, resolved hosting issues, and managed basic network infrastructure.'
       },

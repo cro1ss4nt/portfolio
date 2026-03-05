@@ -248,7 +248,7 @@
         <!-- Grid cho WebGiaRe & Spa Pet -->
         <div class="projects-grid">
           
-          <!-- Project 2 -->
+          <!-- Project 2 (UPDATED): WebGiaRe & Infrastructure -->
           <div class="project-card">
             <div class="card-img-wrapper">
               <img src="/assets/webgiare.png" alt="WebGiaRe Project" class="card-img zoomable-img" (click)="openLightbox('/assets/webgiare.png')">
@@ -256,22 +256,35 @@
             <div class="card-body">
               <div class="card-category">{{ t.projects.companyProj }} (Hola Group)</div>
               <h3 class="card-title">{{ t.projects.webGiaReTitle }}</h3>
+              
+              <!-- Live Link WebGiaRe -->
+              <a href="https://webgiare.cloud" target="_blank" class="live-link-text">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                webgiare.cloud
+              </a>
+
               <p class="card-desc">
-                @if(currentLang === 'vi'){ Trực tiếp cấu hình và lưu trữ các trang web thông qua máy chủ <strong>IIS (Internet Information Services)</strong>. }
-                @else{ Directly configured and hosted websites using <strong>IIS (Internet Information Services)</strong> servers. }
+                @if(currentLang === 'vi'){ 
+                  Hệ thống phân phối giao diện web mẫu. Thực hiện đóng gói ứng dụng bằng <strong>Docker</strong>, truyền qua IP nội bộ của <strong>VMware</strong> và cấu hình <code>web.config</code> để IIS phục vụ như một Reverse Proxy.
+                } @else { 
+                  Web template distribution system. Containerized using <strong>Docker</strong>, routed through <strong>VMware</strong> internal IP, and configured via <code>web.config</code> for IIS Reverse Proxy delivery.
+                }
               </p>
               
               <div class="achievement-box">
                 <h4 class="achievement-title">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
-                  {{ t.projects.dockerAchieve }}
+                  Deployment Stack
                 </h4>
-                <p class="achievement-text">
-                  @if(currentLang === 'vi'){ Viết và <strong>tối ưu hóa cấu hình Dockerfile</strong>, giúp giảm đáng kể kích thước image và tăng tốc độ triển khai ứng dụng nhất quán trên nhiều môi trường khác nhau. }
-                  @else{ Wrote and <strong>optimized Dockerfile configurations</strong>, significantly reducing image sizes and speeding up consistent application deployment across various environments. }
-                </p>
+                <div class="mini-gallery">
+                   <img src="/assets/iis.png" alt="IIS Manager" class="mini-img zoomable-img" (click)="openLightbox('/assets/iis.png')">
+                   <p class="achievement-text">
+                     @if(currentLang === 'vi'){ Tối ưu Docker Image và quản lý routing qua <strong>Windows Server 2022</strong>. }
+                     @else{ Optimized Docker images and managed routing via <strong>Windows Server 2022</strong>. }
+                   </p>
+                </div>
               </div>
-              <div class="card-tags"><span>IIS Server</span><span>Docker</span><span>DevOps</span></div>
+              <div class="card-tags"><span>Docker</span><span>VMware</span><span>IIS Reverse Proxy</span><span>web.config</span></div>
             </div>
           </div>
 
